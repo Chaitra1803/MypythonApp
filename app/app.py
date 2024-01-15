@@ -5,7 +5,7 @@ import time
 app = Flask(__name__)  # Indent for clarity
 
 welcome_messages = [
-    'Welcome to Journey of Devops and CICD'
+    'Welcome to Journey of Devops and CICD Folks'
 ]
 
 @app.route('/')
