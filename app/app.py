@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Welcome to Devops and CICD'
+    return 'Welcome to Journey of Devops and CICD'
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
