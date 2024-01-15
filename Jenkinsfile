@@ -8,7 +8,7 @@ pipeline {
         sh 'docker tag my-flask $DOCKER_BFLASK_IMAGE'
       }
     }
-    stage('Test') {
+    stage('Automated Testing in CI') {
       steps {
         sh 'docker run my-flask python -m pytest app/tests/'
       }
