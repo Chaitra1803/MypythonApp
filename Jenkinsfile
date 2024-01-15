@@ -19,7 +19,7 @@ pipeline {
       }
     }
 
-    stage('Deploy (with Rollback)') {
+    stage('Rollback Mechanism in CD') {
       steps {
         script {
           def imageTag = env.BUILD_FAULTY_VERSION == 'true' ? '$DOCKER_BFLASK_FAULTY_IMAGE' : '$DOCKER_BFLASK_IMAGE'
