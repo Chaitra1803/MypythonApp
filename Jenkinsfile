@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   triggers {
-      cron('0/30 * * * *')  // Run every 30 mins
+      cron('* * * * *')  // Run every 30 mins
   }
 
   stages {
