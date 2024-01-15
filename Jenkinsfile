@@ -23,7 +23,7 @@ pipeline {
     }
     
   }
-
+/*
 post{
       always{
             sh 'docker rm -f mypycont'
@@ -33,6 +33,7 @@ post{
             body: "CiCd pipeline"
         }
 }
+*/
 
 }
 
