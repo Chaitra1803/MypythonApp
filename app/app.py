@@ -2,7 +2,7 @@ from flask import Flask
 import random
 import time
 
-app = Flask(_name_)
+app = Flask(__name__)  # Indent for clarity
 
 welcome_messages = [
     'Welcome to Journey of Devops and CICD',
@@ -14,7 +14,7 @@ welcome_messages = [
 def hello_world():
     return random.choice(welcome_messages)
 
-if _name_ == '_main_':
+if __name__ == '__main__':  # Double underscore for main
     while True:
         app.run(debug=True, host='0.0.0.0')
-        time.sleep(60)
+        time.sleep(60)
